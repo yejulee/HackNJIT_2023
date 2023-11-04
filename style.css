@@ -3,3 +3,7 @@ h1{
   color: rgb(194, 178, 128);
   font-family: "Nanum Pen Script", serif;
 }
+
+body{
+  background-image: url("SandWater.jpg");
+}
