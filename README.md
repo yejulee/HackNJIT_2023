@@ -9,5 +9,13 @@ This website aims to act like a message in a bottle that bubbles up to the top o
 
 * Issues with picture: easily fixed with "background-size = cover"
 
+* Difference in pixel size: use percentages instead of pixel
+
 ## Links Used: 
-https://images.freeimages.com/images/large-previews/ffb/water-on-the-beach-1401086.jpg
+
+### Learning:
+* https://youtu.be/G3e-cpL7ofc?si=-pswVS44zxxiCWBf
+* https://www.w3schools.com/css/default.asp
+
+### Troubleshooting:
+* https://stackoverflow.com/questions/20565736/my-background-image-get-cut-off-at-the-bottom
