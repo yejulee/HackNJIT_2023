@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Messages</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script"/>
+    
+    <h1 class="heading">
+      Write a message:
+    </h1>
+
+    <p class="descr">
+      It can be as simple as a hello!
+    </p>
+    
+    <input id="messageInput" class="textbox" type="text" placeholder="Your text here:">
+    
+    <div class="button-container">
+        <button class="submit" onclick="submitMessage()"">
+            SUBMIT
+          </button>
+    </div>
+    
+    <div class="box-of-messages">
+        <ul id="messages"></ul>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+        const socket = io();
+
+        // Function to emit a new message to the server
+        function submitMessage() {
+            const messageInput = document.getElementById('messageInput');
+            socket.emit('new message', messageInput.value);
+            messageInput.value = '';
+        }
+
+        // Listen for messages from the server to display
+           // Listen for messages from the server to display
+        socket.on('display messages', function(messages) {
+        const messagesList = document.getElementById('messages');
+        messagesList.innerHTML = ''; // Clear the current messages
+        messages.forEach(function(message) {
+            const li = document.createElement('li');
+            li.textContent = message.text;
+            // Insert the new message at the beginning of the list
+            messagesList.insertBefore(li, messagesList.firstChild);
+        });
+    });
+    
+    </script>
+
+  </body>
+</html>
