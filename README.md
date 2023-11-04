@@ -2,4 +2,5 @@
 YeJu Lee, Steven Packard
 
 ## Description
-This website aims to act like a message in a bottle that people often send out to sea.
+This website aims to act like a message in a bottle that bubbles up to the top of the page when it is submitted.
+
