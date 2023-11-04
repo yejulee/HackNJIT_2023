@@ -1,4 +1,9 @@
+body{
+  
+}
+
 h1{
-    background-color: rgb(209, 218, 163);
-    color: rgb(255, 255, 186);
+  text-align: center;
+  color: rgb(194, 178, 128);
+  font-family: "Nanum Pen Script", serif;
 }
