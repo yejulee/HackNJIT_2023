@@ -1,4 +1,4 @@
-# HackNJIT_2023 - Message in a Bottle
+# HackNJIT_2023 - WeBubble
 YeJu Lee, Steven Packard
 
 ## Inspiration
